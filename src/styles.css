@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500&display=swap');
+
+body {
+    background-color: #1e1f20;
+    color:#ffffff9f;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+}
+
+li {
+    list-style: none;
+    margin: 5px 10px;
+}
+
+h1 { 
+    font-size: 90px;
+    font-weight: 400;
+    margin: 0;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+     margin: 3px;
+     font-weight: 200;
+     text-align: center;
+}
+
+h3 {
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 50px;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+.work-details {
+    width: 50%;
+}
+
+.work-details td {
+    padding: 30px;
+    font-size: small;
+}
+
+a:hover {
+    color: #c58282;
+}
+
+
+.section-intro {
+    text-align: center;
+    margin-top: 15vh;
+}
+
+.light-text {
+    font-weight: 100;
+}
+
+header ul {
+    display: flex;
+    padding: 10px 10px 50px 20px;
+}
+
+header {
+    display:flex;
+    justify-content: center;
+    height: 75px
+}
+
+.socials {
+    width: 50px;
+    height: 200px;
+    background-color: #860b0b;
+    border-radius: 30px 0 0 30px;
+    position: fixed;
+    right: 0;
+    top: 15vh;
+}
+
+@media only screen and (max-width: 300px) {
+    .socials {
+        display: none;
+    }
+
+}
+
+.social {
+    width: 100px;
+    height: 33%;
+}
+
+.wave {
+    fill: rgb(0, 0, 0);
+    width: 100vw;
+    height: 46vh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.social svg {
+    fill: black;
+
+}
+
+footer {
+    display: flex;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    justify-content: center;
+    width: 100vw;
+    font-size: small;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-me {
+    width: 60%;
+    text-align: center;
+}
+
+.about-me img {
+    border-radius: 50%;
+    height: 200px;
+    margin: 40px 10px 10px 10px;
+}
+
+.options {
+    display: flex;
+}
+
+.options a {
+    margin: 20px 10px;
+}
+
+a {
+    text-decoration: none;
+    color:#ffffff9f;
+}
+
+footer ul {
+    padding: 5px;
+    display: flex;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .work-details {
+        width: 80%;
+
+    }
+
+    .work-details td {
+
+        padding: 5px;
+    }
+}
+
+.sub-pages-footer {
+    position: relative;
+}
+
+/*Stack pages*/
+
+.stacks h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 300;
+    font-size: medium;
+    padding: 3px;
+}
+
+/*contact pages*/
+
+.form-submit {
+
+    width: 50%;
+}
+
+.form-submit form {
+    width: 100%;
+}
+
+.form-submit .form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-row .form-control {
+    width: 50%;
+    font-size: 10px;
+    padding: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.form-row .form-control:focus, 
+.form-submit textarea:focus {
+
+    outline: 0;
+    background-color: rgb(212, 168, 168);
+}
+
+textarea {
+    font-family: 'Josefin Sans', sans-serif;
+    width: 100%;
+    padding: 0;
+    resize: none;
+    font-size: 10px;
+    margin-top: 5px;
+    padding: 8px 0;
+}
+
+form button {
+
+    width: 100%;
+    background-color: #49cf6b;
+    padding: 3px;
+    font-family: 'Josefin Sans', sans-serif;
+    border: none;
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .form-submit {
+        width: 80%;
+    }
+
+    .form-submit .form-row {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .form-row .form-control {
+        width: 100%;
+        margin-top: 5px;
+    }
+}
