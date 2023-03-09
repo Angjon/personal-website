@@ -1,2 +1,2 @@
 # personal-website
-### Created a persona website using HTML and CSS
+### Created a personal website using HTML and CSS
