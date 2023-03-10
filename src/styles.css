@@ -53,6 +53,27 @@ a:hover {
     color: #c58282;
 }
 
+a:not(.socials-tag) {
+    position: relative;
+    padding: 0 10px;
+}
+
+a:not(.socials-tag)::after {
+    content: "";
+    position: absolute;
+    background-color: #c58282;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -3px;
+    transition: 0.3s;
+}
+
+a:hover::after {
+    width: 100%;
+    color: #c58282;
+
+}
 
 .section-intro {
     text-align: center;
@@ -65,7 +86,24 @@ a:hover {
 
 header ul {
     display: flex;
-    padding: 10px 10px 50px 20px;
+    position: relative;
+}
+
+
+.header-hover a::after {
+    content: "";
+    position: absolute;
+    background-color: #c58282;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: 20px;
+    transition: 0.3s;
+}
+
+.header-hover a:hover::after {
+    width: 100%;
+    color: #c58282;
 }
 
 header {
@@ -107,6 +145,11 @@ header {
 
 .social svg {
     fill: black;
+
+}
+
+.social a {
+    text-decoration: none;
 
 }
 
