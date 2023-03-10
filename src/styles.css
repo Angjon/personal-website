@@ -193,6 +193,11 @@ footer {
     margin: 40px 10px 10px 10px;
 }
 
+.about-me p {
+    font-size: 30px;
+
+}
+
 .options {
     display: flex;
 }
